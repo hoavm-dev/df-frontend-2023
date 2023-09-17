@@ -6,9 +6,81 @@
     <title>Bookstore</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
-    Hello world
-    <script src="script.js"></script>
+    <header>
+      <div class="logo">Bookstore</div>
+      <div class="avatar">
+        <img
+          src="https://business.bing.com/api/v3/search/person/photo?caller=IP&id=3f71a8d2-3e56-4947-be24-03abdf90e803"
+          alt="Avatar"
+          class="avatar-icon"
+        />
+        <div class="avatar-name">Minh Hòa</div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="search-add">
+        <input
+          type="text"
+          class="search-box border"
+          id="search"
+          placeholder="Search books"
+        />
+        <button id="add-book-button" class="btn">Add book</button>
+      </div>
+      <!-- <div class="book-list">
+        <h2>Book List</h2>
+        <ul id="book-list"></ul>
+      </div> -->
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Topic</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list">
+          <!-- Table rows will be generated dynamically -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="add-book-form" class="modal">
+      <div class="add-book-form">
+        <div class="add-book-form-title">
+          <h2>Add Book</h2>
+          <button id="close-form-button" class="close-button">X</button>
+        </div>
+        <form id="book-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+          <label for="author">Author</label>
+          <input type="text" id="author" required />
+          <label for="topic">Topic</label>
+          <input type="text" id="topic" required />
+          <div class="btn-add">
+            <button type="submit" class="btn">Create</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="confirmation-modal" class="modal">
+      <div class="modal-content">
+        <div class="del-book-form-title">
+          <h2 class="del-title">Delete Book</h2>
+          <button id="close-del-form-button" class="close-button">X</button>
+        </div>
+        <p id="confirmation-text"></p>
+        <button id="delete-confirm-button">Delete</button>
+        <button id="cancel-confirm-button" class="btn">Cancel</button>
+      </div>
+    </div>
   </body>
+
+  <script src="script.js"></script>
 </html>
