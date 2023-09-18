@@ -33,6 +33,7 @@ header {
 
 .avatar-icon {
   height: 36px;
+  width: 36px;
   border-radius: 100%;
   margin-right: 1rem;
 }
