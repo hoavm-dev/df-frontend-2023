@@ -57,11 +57,27 @@
         </div>
         <form id="book-form">
           <label for="name">Name</label>
-          <input type="text" id="name" required />
+          <input
+            type="text"
+            id="name"
+            placeholder="Type book's name"
+            required
+          />
           <label for="author">Author</label>
-          <input type="text" id="author" required />
+          <input
+            type="text"
+            id="author"
+            placeholder="Type book's author"
+            required
+          />
           <label for="topic">Topic</label>
-          <input type="text" id="topic" required />
+          <!-- <input type="text" id="topic" required /> -->
+          <select name="topic" id="topic" required>
+            <option value="" disabled selected>Select book's topic</option>
+            <option value="Programing">Programing</option>
+            <option value="Database">Database</option>
+            <option value="DevOps">DevOps</option>
+          </select>
           <div class="btn-add">
             <button type="submit" class="btn">Create</button>
           </div>

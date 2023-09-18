@@ -140,6 +140,17 @@ table {
   border-color: rgb(203 213 225);
   height: 32px;
   border-radius: 4px;
+  padding-inline: 0.8rem;
+  font-size: medium;
+}
+#name,
+#author,
+#topic::placeholder {
+  opacity: 0.75;
+}
+#topic {
+  height: 38px;
+  border: 2px solid rgb(203 213 225);
 }
 
 .add-book-form-title {
@@ -243,4 +254,9 @@ table {
 #cancel-confirm-button {
   margin: 10px;
   padding: 5px 15px;
+}
+
+/* Style for the placeholder option */
+select option[disabled] {
+  opacity: 0.75;
 }
